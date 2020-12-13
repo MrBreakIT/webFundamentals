@@ -1,0 +1,96 @@
+* {
+    vertical-align: baseline;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    /* border: 0.5px dotted red; */
+    outline: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    background-color: gray;
+    padding: 2%;
+    border-radius: 5px;
+}
+.container img.toasty {
+    display: none;
+    max-height: 300px;
+    position: relative;
+    z-index: 10;
+}
+#functionpracticebox {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+}
+.functioncolumn {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    height: 150px;
+    background-color: white;
+    margin: 0% 5%;
+    padding: 1%;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+}
+.functioncolumn h1 {
+    background-color: lightblue;
+    color: rebeccapurple;
+    border-radius: 5px;
+    height: 30%;
+    font-size: 180%;
+    font-weight: bolder;
+    text-align: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.functioncolumn h1 img {
+    display: none;
+    position: absolute;
+    z-index: 10;
+}
+.functioncolumn img.fpunch {
+    width: 50%;
+    display: none;
+    z-index: 1;
+    position: relative;
+}
+.functioncolumnbody {
+    height: 50%;
+    background-color: deeppink;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.functioncolumnbody button {
+    color: white;
+    background-color: tomato;
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 100%;
+    font-weight: bolder;
+    margin-right: 5%;
+}
+.functioncolumnbody p {
+    color: white;
+    background-color: deeppink;
+    align-self: center;
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    width: 60%;
+    margin-right: 15%;
+    z-index: 0;
+}

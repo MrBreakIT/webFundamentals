@@ -1,0 +1,124 @@
+/* * {
+  margin-top: 5px;
+  padding: 0px;
+  outline: 1px dotted red;
+  font-family: sans-serif;
+} */
+
+#wrapper {
+  width: 1400px;
+  /* height: auto; */
+  margin: auto;
+  /* margin-bottom: 15px; */
+  background-color: maroon;
+  display: inline-;
+}
+
+#header {
+  background-color: rgb(172, 163, 163);
+  /* padding: 5px 5px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header h1 {
+  font-size: 38pt;
+  margin-left: 20px;
+}
+#header p {
+  font-size: 18pt;
+  margin-right: 20px;
+}
+
+#topSection {
+  /* background-color: maroon; */
+  margin-top: 15px;
+  width: 1400px;
+  display: flex;
+  justify-content: space-evenly;
+  /* margin-top: 0px; */
+}
+img {
+  margin: 5px;
+  width: 650px;
+  height: 350px;
+  border: 5px silver solid;
+  /* padding: 5px; */
+}
+.topRight {
+  background-color: lightgray;
+  margin: 5px;
+  width: 650px;
+  height: 350px;
+  border: 5px silver solid;
+}
+h2 {
+  background-color: gray;
+  color: white;
+  font-size: 24pt;
+  margin-top: 0px;
+}
+.topRight p {
+  font-size: 16pt;
+  margin: 2px;
+}
+
+#midSection {
+  width: 1400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.column {
+  /* display: flex;
+  justify-content: center; */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 430px;
+  background-color: lightgray;
+}
+.column h3,
+h4 {
+  margin-left: 0px;
+  color: white;
+  background-color: gray;
+  font-size: 18pt;
+}
+.column p {
+  margin: 5px;
+}
+.column img {
+  width: 430px;
+  height: 200px;
+  border: none;
+  /* border-top: 1px black solid;
+  border-bottom: 1px black solid; */
+  margin-left: 0px;
+}
+
+.column .icon img {
+  /* display: flex;
+  justify-content: space-around;
+  font-size: 2rem; */
+  width: 75px;
+  height: 75px;
+}
+
+.column button {
+  margin: 5px;
+  width: auto;
+  background-color: seagreen;
+  border-radius: 4px;
+  color: white;
+}
+
+#footer {
+  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#footer img,
+a {
+  width: 15px;
+  height: 15px;
+}
