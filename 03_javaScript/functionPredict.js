@@ -33,6 +33,7 @@ function highFive(num) {
         }
     }
 }
+console.log(highFive(5));
 console.log("------------------------");
 
 

@@ -5,23 +5,23 @@
 // Math.floor(x) rounds down a number
 // Math.trunc(x) cuts off the decimal
 
-// function rollOne(){
-//     var rand = Math.random() * 6;
-//     rand = Math.ceil(rand);
-//     return rand;
-// }
+function rollOne() {
+    var rand = Math.random() * 6;
+    rand = Math.ceil(rand);
+    return rand;
+}
 
 // 2) Second, create a function playFives(num), which should call rollOne() multiple times – ‘num' times, in fact, where 'num' is input parameter to playFives(num). Each time, it should print the value rollOne() returns, and if that return value is 5, also print “That’s good luck!”
 
-// function playFives(num) {
-//     for(var i = 1 ; i <= num ; i++) {
-//         var roll = rollOne();
-//         console.log(roll);
-//         if(roll == 5) {
-//             roll = "That's good luck!";
-//         }
-//     }
-// }
+function playFives(num) {
+    for (var i = 1; i <= num; i++) {
+        var roll = rollOne();
+        console.log(roll);
+        if (roll == 5) {
+            roll = "That's good luck!";
+        }
+    }
+}
 
 // playFives(3);
 
@@ -29,53 +29,53 @@
 // times (but not print anything after each call). After the last of these eight calls, it should print out
 // the lowest and highest values that it received from rollOne, among those eight calls.
 
-// function playStatistics(num) {
-//     var arr = [];
-//     var max = 0;
-//     var min = 0;
-//     for (var i=1; i<=num; i++) {
-//         arr.push(rollOne());
-//     }
-//             console.log("starting loop");
-//             for (var i = 1; i < arr.length; i++) {
-//                 // console.log("starting loop");
-//                 if (arr[i] > max) {
-//                     max = arr[i];
-//                 }
-//                 if (arr[i] < min) {
-//                     min = arr[i];
-//                 }
-//             }
-//             return [max, min];
-//         }
-//         playStatistics(8);
+function playStatistics(num) {
+    var arr = [];
+    var max = 0;
+    var min = 0;
+    for (var i = 1; i <= num; i++) {
+        arr.push(rollOne());
+    }
+    console.log("starting loop");
+    for (var i = 1; i < arr.length; i++) {
+        // console.log("starting loop");
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+        if (arr[i] < min) {
+            min = arr[i];
+        }
+    }
+    return [max, min];
+}
+playStatistics(8);
 
 
 // 4) Fourth, make a copy of playStatistics and add code to make playStatistics2(), so
 // that at the end (in addition to printing high/low rolls), it also prints the total sum of all eight rolls.
 
-function playStatistics(num) {
-        var arr = [];
-        var max = -Infinity;
-        var min = Infinity;
-        var sum = 0;
-        for (var i=1; i<=num; i++) {
-            arr.push(rollOne());
-        }
-                console.log("starting loop");
-                for (var i = 1; i < arr.length; i++) {
-                    // console.log("starting loop");
-                    if (arr[i] > max) {
-                        max = arr[i];
-                    }
-                    if (arr[i] < min) {
-                        min = arr[i];
-                    }
-                }
-                return [max, min,sum];
-            }
-            playStatistics(8);
-    
+// function playStatistics(num) {
+//     var arr = [];
+//     var max = -Infinity;
+//     var min = Infinity;
+//     var sum = 0;
+//     for (var i = 1; i <= num; i++) {
+//         arr.push(rollOne());
+//     }
+//     console.log("starting loop");
+//     for (var i = 1; i < arr.length; i++) {
+//         // console.log("starting loop");
+//         if (arr[i] > max) {
+//             max = arr[i];
+//         }
+//         if (arr[i] < min) {
+//             min = arr[i];
+//         }
+//     }
+//     return [max, min, sum];
+// }
+// playStatistics(8);
+
 
 
 
